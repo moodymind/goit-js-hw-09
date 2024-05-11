@@ -1,0 +1,40 @@
+body {
+  background-color: #fff;
+  width: 1440px;
+  height: 696px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.gallery {
+  display: flex;
+  padding: 24px 156px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scaleX(1.04) scaleY(1.04);
+}
+
+.lightbox {
+  background-color: rgba(46, 47, 66, 0.8);
+}
